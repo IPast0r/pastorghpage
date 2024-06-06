@@ -239,6 +239,11 @@ body{
 .floatRight{
     float: right;
 }
+@media (max-width: 488px) {
+    .floatRight {
+        font-size: 1.2rem;
+    }
+}
 @media (max-width: 768px) {
     .footerText{
         font-size: 20px;
