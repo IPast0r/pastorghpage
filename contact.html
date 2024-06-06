@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASTOR.OS/CONTACT</title>
+    <link rel="shortcut icon" type="image/x-icon" href="alien.ico" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1>CONTACT</h1>
+        </header>
+
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <section>
+            <form action="https://api.web3forms.com/submit" method="POST" class="formulario">
+                <fieldset>            
+                    <legend class="legend">Do you want to get in touch?</legend>
+                    <div class="contenedor-campos">
+                        <input type="hidden" name="access_key" value="8f13e40b-bf94-4bd1-bb9b-eb66783541fa">
+                        <div class="campo">
+                            <label>Name</label>
+                            <input class="input-text" type="text" name="name" required> 
+                        </div>
+                        <div class="campo ">
+                            <label>Email</label>
+                            <input class="input-text" type="email" name="email" required>
+                        </div>
+                        <div class="campo ">
+                            <label>Message</label>
+                            <textarea class="input-text" name="message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="alinear-derecha flex marginTop">
+                        <input class="button w-100" type="submit" value="SEND »">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <footer class="site-footer">
+            <p class="footerText">[ « » | x ] <span class="floatRight">® ALL RIGHTS RESERVED</span></p>
+        </footer>
+    </main>
+</body>
+</html>

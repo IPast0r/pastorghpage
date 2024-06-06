@@ -1,0 +1,116 @@
+body {
+    background-image: url('fondoBien2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: black;
+    margin-left: 18%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 18%;
+    font-family: fuenteVHS;
+}
+@font-face {
+    font-family:fuenteVHS;
+    src: url(fuenteVHSS.ttf);
+}
+main{
+    height: 63vh;
+    margin-top: 4%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.nav-bg{
+    background-color: var(--segundario);
+}
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    background-color: azure;
+    color: black;
+    font-family: fuenteVHS;
+    text-align: center;
+}
+p{
+    color: azure;
+    font-size: 30px;
+    font-weight: bold;
+}
+.pFondoBlanco{
+    color: black;
+    font-size: 30px;
+    display:inline;
+}
+header{
+    align-items: center;
+    align-self: center;
+}
+footer{
+    background-color: azure;
+    overflow: auto;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.nav {
+    margin-top: 2%;
+    font-family: fuenteVHS;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 90%;
+} 
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+.nav a {
+    padding: .5em .8em;
+    color: azure;
+    position: relative;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 5px solid azure;
+    border-right: 5px solid azure;
+}
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 5px solid azure;
+    border-left: 5px solid azure;
+}
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+.nav a:hover {
+  color: rgb(251, 255, 255);
+}

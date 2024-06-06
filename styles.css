@@ -1,0 +1,467 @@
+:root{
+    --blanco: #30d37d;
+    --oscuro: #000000;
+    --primario: #FFC107;
+    --segundario: #0097A7;
+    --gris: #75757575;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 4rem;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+.marginTop{
+    margin-top: 5%;
+}
+.flex{
+    display: flex;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: url('fondoBien2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: black;
+    font-family: fuenteVHS;
+    margin-top: 7rem;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+.apartadoExtraBody{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: url('fondoPantallaExtra.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: black;
+    font-family: fuenteVHS;
+    margin-top: 7rem;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+.crt {
+    background-image: linear-gradient(
+      rgba(17, 20, 53, 0.05),
+      rgba(118, 255, 241, 0.05)
+    );
+    background-repeat: repeat;
+    background-size: 100vw 10vh;
+    animation: bgscroll 2s linear infinite;
+}
+@keyframes bgscroll {
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@media (max-width: 877px) {
+    body{
+        background-image: url('fondoSinBorde.png');
+    }
+}
+@font-face {
+    font-family:fuenteVHS;
+    src: url(fuenteVHSS.ttf);
+}
+@font-face {
+    font-family:fuenteLINEA;
+    src: url(Linebeam.ttf);
+}
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--oscuro);
+    background-color: var(--blanco);
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.nav-bg{
+    background-color: transparent;
+}
+.margenBottom{
+    margin-bottom: 18rem;
+}
+.margenBottomS{
+    margin-bottom: 5rem;
+}
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 687px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.score{
+    font-size: 17px;
+    font-weight: bold;
+}
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding: 1rem;
+    position: relative;
+    text-transform: uppercase;
+}
+.navegacion-principal a:hover::before{
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    content:'» ';
+    font-weight: bold;
+}
+.navegacion-principal a:hover{
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    font-weight: bold;
+}
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.contenido-hero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-hero h2 ,
+.contenido-hero p {
+    color: var(--blanco);
+}
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        column-gap: 1rem;
+        margin-bottom: 6rem;
+    }
+    .TituloOS{
+        font-size: 15rem;
+        margin-bottom: 2rem;
+    }
+    .Quote{
+        font-size: 2.1rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 15rem;
+    }
+    .osEstilo{
+        font-size: 5rem;
+    }
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio .iconos{
+    height: 48rem;
+    width: 25rem;
+    display: flex;
+    justify-content: space-evenly;   
+    align-items: center;
+    background-color: transparent;
+}
+.TituloOS{
+    font-family: fuenteLINEA;
+    color: var(--blanco);
+    font-weight: 50;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+.Quote{
+    font-size: 18px;
+    color: azure;
+    text-align: center;
+}
+.osEstilo{
+    font-family: fuenteLINEA;
+    color: azure;
+    font-weight: 50;
+}
+
+.site-header{
+    border-top: 2px solid #30d37d ;
+    border-bottom: 2px solid #30d37d ; 
+    text-align: center;
+    color: #30d37d;
+}
+.site-headerExtra{
+    border-top: 2px solid #30d37d ;
+    border-bottom: 2px solid #30d37d ; 
+    text-align: center;
+    color: #30d37d;
+}
+.site-footer {
+    border-top: 2px solid #30d37d ;
+    border-bottom: 2px solid #30d37d ;
+}
+.margintop{
+    margin-top: 10rem;
+}
+.footerText{
+    font-family: fuenteVHS;
+    color: #30d37d;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.floatRight{
+    float: right;
+}
+@media (max-width: 768px) {
+    .footerText{
+        font-size: 20px;
+    }
+}
+
+.box {
+    height: 19rem;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+  
+.button {
+    font-size: 1em;
+    padding: 10px;
+    color: var(--oscuro);
+    border: 2px solid var(--blanco);
+    background-color: var(--blanco);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-family: fuenteVHS;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.button:hover{
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+}
+.button:hover::before{
+    background-color: transparent;
+    color: var(--blanco);
+    content:'» ';
+    font-weight: bold;
+}
+.button:hover::after{
+    background-color: transparent;
+    color: var(--blanco);
+    content:' «';
+    font-weight: bold;
+}
+.extraButton{
+    font-size: 1em;
+    padding: 10px;
+    color: var(--oscuro);
+    border: 2px solid var(--blanco);
+    background-color: var(--blanco);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-family: fuenteVHS;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.extraButton:hover{
+    background-color: transparent;
+    border: 2px solid var(--blanco);
+    color: var(--blanco);
+}
+
+@media screen and (max-width: 700px){
+    .extraButton{
+        display: none;
+    }
+    span{
+        font-size: 1.5rem;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 10rem;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.popup {
+    margin: 70px auto;
+    margin-top: 20rem;
+    width: 80rem;
+    height: 50rem;
+    padding: 20px;
+    background-image: url('fondoSinBorde.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    border: 4px solid var(--blanco);
+    color: var(--blanco);
+    padding: 2rem;
+}
+  
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+.H1Popup{
+    font-size: 5rem;
+}
+.popup .content {
+    max-height: 100%;
+    overflow: auto;
+    font-family: fuenteVHS;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
+
+.tecleado{
+    font-size: 5rem;
+}
+.typewriter h1 {
+    color: var(--blanco);
+    font-family: fuenteVHS;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--blanco); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+        typing 3s steps(10),
+        blink-caret .5s step-end infinite;
+    width: 32rem;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 34rem }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--blanco) }
+}
+
+.formulario{
+    background-color: transparent;
+    width: min( 60rem , 100% );
+    margin: 0 auto;
+    padding-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border: 3px solid var(--blanco);
+}
+.formulario fieldset{
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 12.5rem;
+        column-gap: 1rem;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1/3 ;
+    }
+}
+.campo{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.campo label{
+    color: var(--blanco);
+    margin-bottom: .5rem;
+    display: block;
+    text-transform: uppercase;
+    font-size: large;
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    background-color: transparent;
+    color: azure;
+    border: 2px solid var(--blanco);
+    font-family: fuenteVHS;
+    font-size: medium;
+}
+.legend{
+    text-align: center;
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.campo textarea{
+    height: 12rem;
+    resize: none;
+}
